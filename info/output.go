@@ -16,17 +16,27 @@ func PrintWelcomeMessage() {
 //      bmi case      //
 ////////////////////////
 
+// show user his bmi as per type
 func PrintBMIMessage(bmi float64) {
-	// show user his bmi as per type
+
 	if underWeight <= bmi && bmi < normalWeight {
-		fmt.Printf(printUnderWeightMessage, bmi)
+
+		fmt.Printf(messageUnderWeight, bmi)
+
 	} else if normalWeight <= bmi && bmi < overWeight {
-		fmt.Printf(printNormalWeightMessage, bmi)
+
+		fmt.Printf(messageNormalWeight, bmi)
+
 	} else if overWeight <= bmi && bmi < obeseWeight {
-		fmt.Printf(printOverWeightMessage, bmi)
+
+		fmt.Printf(messageOverWeight, bmi)
+
 	} else if bmi >= obeseWeight {
-		fmt.Printf(printObeseWeightMessage, bmi)
+
+		fmt.Printf(messageObeseWeight, bmi)
+
 	} else {
-		fmt.Printf(printOtherWeightMessage, bmi)
+
+		fmt.Printf(messageOtherWeight, bmi)
 	}
 }
