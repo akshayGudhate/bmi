@@ -16,7 +16,7 @@ var reader = bufio.NewReader(os.Stdin)
 
 func GetUserMetrics() (weight, height float64) {
 	weight = getUserInput(weightPrompt)
-	height = getUserInput(weightPrompt)
+	height = getUserInput(heightPrompt)
 	return
 }
 
