@@ -7,7 +7,12 @@ func main() {
 	info.PrintWelcomeMessage()
 
 	// get user metrics data
-	weight, height := info.GetUserMetrics()
+	weight, height, err := info.GetUserMetrics()
+	// if error
+	if err != nil {
+		info.PrintInvalidInputMessage()
+		return
+	}
 
 	// bmi calculations
 	bmi := calculateBMI(weight, height)

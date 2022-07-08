@@ -14,6 +14,7 @@ const (
 	// user input
 	separator    = "--------------------------------------------------------------"
 	mainTitle    = "*********************** BMI Calculator ***********************"
+	invalidInput = "\nERROR: Please enter a valid input!"
 	weightPrompt = "Please enter your weight (kg): "
 	heightPrompt = "Please enter your height (cm): "
 

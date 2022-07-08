@@ -13,6 +13,14 @@ func PrintWelcomeMessage() {
 }
 
 ////////////////////////
+//      invalids      //
+////////////////////////
+
+func PrintInvalidInputMessage() {
+	fmt.Println(invalidInput)
+}
+
+////////////////////////
 //      bmi case      //
 ////////////////////////
 
