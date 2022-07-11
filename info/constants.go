@@ -12,11 +12,12 @@ const (
 	obeseWeight  = 30.0
 
 	// user input
-	separator    = "--------------------------------------------------------------"
-	mainTitle    = "*********************** BMI Calculator ***********************"
-	invalidInput = "\nERROR: Please enter a valid input!"
+	endTitle     = "Thank You!"
+	startTitle   = "BMI Calculator"
+	invalidInput = "ERROR: Invalid input!"
 	weightPrompt = "Please enter your weight (kg): "
 	heightPrompt = "Please enter your height (cm): "
+	separator    = "---------------------------------------------------------------------------------------------"
 
 	// bmi output
 	messageUnderWeight  = "\nYour BMI is: %.2f and you are underweight person.\n"

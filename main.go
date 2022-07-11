@@ -17,6 +17,9 @@ func main() {
 	// bmi calculations
 	bmi := calculateBMI(weight, height)
 
+	// print end message
+	info.PrintEndingMessage()
+
 	// print bmi message
 	info.PrintBMIMessage(bmi)
 }

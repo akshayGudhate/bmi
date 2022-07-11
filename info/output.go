@@ -1,14 +1,17 @@
 package info
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/common-nighthawk/go-figure"
+)
 
 ////////////////////////
 //       welcome      //
 ////////////////////////
 
 func PrintWelcomeMessage() {
-	fmt.Println(separator)
-	fmt.Println(mainTitle)
+	startTitleMessage := figure.NewColorFigure(startTitle, "", "blue", false)
+	startTitleMessage.Print()
 	fmt.Println(separator)
 }
 
@@ -17,7 +20,9 @@ func PrintWelcomeMessage() {
 ////////////////////////
 
 func PrintInvalidInputMessage() {
-	fmt.Println(invalidInput)
+	invalidInputMessage := figure.NewColorFigure(invalidInput, "", "red", false)
+	invalidInputMessage.Print()
+	fmt.Println(separator)
 }
 
 ////////////////////////
@@ -47,4 +52,14 @@ func PrintBMIMessage(bmi float64) {
 
 		fmt.Printf(messageOtherWeight, bmi)
 	}
+	fmt.Println(separator)
+}
+
+////////////////////////
+//       ending       //
+////////////////////////
+
+func PrintEndingMessage() {
+	endTitleMessage := figure.NewColorFigure(endTitle, "", "green", false)
+	endTitleMessage.Print()
 }
