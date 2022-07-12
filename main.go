@@ -18,9 +18,9 @@ func main() {
 	bmi := calculateBMI(weight, height)
 
 	// // ANOTHER WAY USING CHANNELS
-	// ch := make(chan float64)
-	// go calculateBMIWithChannels(weight, height, ch)
-	// bmiWithChannel := <-ch
+	// dataChan := make(chan float64)
+	// go calculateBMIWithChannels(weight, height, dataChan)
+	// bmiWithChannel := <-dataChan
 	// info.PrintBMIMessage(bmiWithChannel)
 
 	// print end message
